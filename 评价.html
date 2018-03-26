@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>评价</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/common.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/base.css" rel="stylesheet"/>
+	<link href="css/user.css" rel="stylesheet"/>
+	<script src="js/index.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<!--固定头部   start-->
+		<div id="gdTop" class="gdTop">
+			<!--header start-->
+			<header class="clear_padding flex_box vertical">
+				<a class="arrow block" href="javascript:history.back()"></a>
+				<!--搜药  start-->
+				<div class="flex tc cColor size36">评价</div>
+				<!--搜药  end-->
+				<a id="menu" class="menu block" href="javascript:void(0)"></a>
+			</header>
+			<!--header end-->
+			<!--footer start-->
+			<div id="fix-box" class="gdBox flex_box vertical gb-top" >
+				<a class="flex block gbHover tc clear_padding" href="p1首页.html">
+					<!--icon start-->
+					<i class="fixIcon block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">首页</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p1-2分类.html">
+					<!--icon start-->
+					<i class="fixIcon fc-fl block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">分类</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p2-1购物车.html">
+					<!--icon start-->
+					<i class="fixIcon fc-gwc block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz  block">购物车</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p3个人中心.html">
+					<!--icon start-->
+					<i class="fixIcon fc-grzx block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">个人中心</i>
+					<!--wenzi end-->
+				</a>
+			</div>
+			<!--footer end-->
+		</div>
+		<!--固定头部   start-->
+		<!--content start-->
+		<div class="main_content">
+			<!--评价结果-->
+			<div class="methed">
+			  <ul>
+			    <li>
+				  <img src="images/trade.png"/>
+				  <div class="evaluate">
+				    <h3 class="ellips size30">康隆 强力枇杷露(无糖型)强力枇杷露150ml </h3>
+					<p><a class="fr est-btn" href="#">评价</a><span class="red size28">X2</span></p>
+				  </div>
+			    </li>
+				<li>
+				  <img src="images/trade.png"/>
+				  <div class="evaluate">
+				    <h3 class="ellips size30">康隆 强力枇杷露(无糖型)强力枇杷露150ml </h3>
+					<p><a class="fr est-btn" href="#">评价</a><span class="red size28">X2</span></p>
+				  </div>
+			    </li>
+				<li>
+				  <img src="images/trade.png"/>
+				  <div class="evaluate">
+				    <h3 class="ellips size30">康隆 强力枇杷露(无糖型)强力枇杷露150ml </h3>
+					<p><a class="fr est-btn" href="#">评价</a><span class="red size28">X2</span></p>
+				  </div>
+			    </li>
+				<li>
+				  <img src="images/trade.png"/>
+				  <div class="evaluate">
+				    <h3 class="ellips size30">康隆 强力枇杷露(无糖型)强力枇杷露150ml </h3>
+					<p><a class="fr est-btn" href="#">评价</a><span class="red size28">X2</span></p>
+				  </div>
+			    </li>
+				<li>
+				  <img src="images/trade.png"/>
+				  <div class="evaluate">
+				    <h3 class="ellips size30">康隆 强力枇杷露(无糖型)强力枇杷露150ml </h3>
+					<p><a class="fr est-btn" href="#">评价</a><span class="red size28">X2</span></p>
+				  </div>
+			    </li>
+			  </ul>
+			</div>
+			<!--评价结果 end-->
+		</div>
+	</div>
+</body>
+<!--弹出框-->
+<div class="popup-wrap" style="display:none;">
+  <div class="popup-cover"></div>
+  <div class="popup-case">
+     <div class="agreement">
+       <h3>用户协议</h3>
+	   <div class="matter">
+	     <p class="word-break">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+	   </div>
+	 </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/base_z.js"></script>
+<script type="text/javascript">
+$(function(){
+	//获取短信验证码
+	$(".test-btn").click(function(){
+		TestGetCode(this);
+	});
+	//用户协议
+	$(".register a.agreement").click(function(e){
+	  e.stopPropagation();	
+	  $(".popup-wrap").show();
+	})
+	$("body").not(".popup-case").click(function(e){	  
+	   $(".popup-wrap").hide();
+    });
+	$(".popup-case").click(function(e){
+		 e.stopPropagation();
+	});
+})
+//获取短信验证码
+var t=60;
+function TestGetCode(i){
+	if(t==0){
+		$(".test-btn").removeClass("grey-bg");
+		i.removeAttribute("disabled");
+		i.value="获取短信验证码";
+		t=60;
+	}else{
+		i.setAttribute("disabled", true); 
+		i.value="重新发送(" + t + ")"; 
+		t--;
+		$(".test-btn").addClass("grey-bg");
+		setTimeout(function(){TestGetCode(i)},1000);
+	}
+}
+</script>
+<script type="text/javascript" src="js/base_z.js"></script>
+<script src="js/index.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/fix.js"></script>
+</html>

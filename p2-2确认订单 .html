@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>确认订单</title>
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/style.css" rel="stylesheet"/>
+		<script src="js/index.js"></script>
+		<script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/fix.js"></script>
+	</head>
+	<body>
+		<!--固定头部   start-->
+		<div id="gdTop" class="gdTop">
+			<!--header start-->
+			<header class="clear_padding flex_box vertical">
+				<a class="arrow block" href="javascript:history.back()"></a>
+				<!--搜药  start-->
+				<div class="flex tc cColor size36">
+					确认订单
+				</div>
+				<!--搜药  end-->
+				<a id="menu" class="menu block" href="javascript:void(0)"></a>
+			</header>
+			<!--header end-->
+			<!--footer start-->
+			<div id="fix-box" class="gdBox flex_box vertical gb-top" >
+				<a class="flex block gbHover tc clear_padding" href="p1首页.html">
+					<!--icon start-->
+					<i class="fixIcon block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">首页</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p1-2分类.html">
+					<!--icon start-->
+					<i class="fixIcon fc-fl block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">分类</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p2-1购物车.html">
+					<!--icon start-->
+					<i class="fixIcon fc-gwc block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz  block">购物车</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p3个人中心.html">
+					<!--icon start-->
+					<i class="fixIcon fc-grzx block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">个人中心</i>
+					<!--wenzi end-->
+				</a>
+			</div>
+			<!--footer end-->
+		</div>
+		<!--固定头部   start-->
+		<!--content start-->
+		<div class="content con-kind">
+			<!--确认订单   start-->
+			<ul class="ulOrder">
+				<li>
+					<h5 class="c3 size30 marB20">收货信息</h5>
+                    <!--跳转页面 start-->
+                    <a href="p2-2-1收货地址_顶部固定悬浮.html">
+                        <!--收货人信息  start-->
+                        <div class="flex_box marB20">
+                            <!--收货人姓名  start-->
+                            <div class="pName flex flex_box vertical">
+                                <i class="i-order block"></i>
+                                <span class="sp-address">王小明 </span>
+                            </div>	
+                            <!--收货人姓名  end-->
+                            <!--收货人手机  start-->
+                            <div class="pName flex flex_box vertical">
+                                <i class="i-order block i-oIphone"></i>
+                                <span class="sp-address">123012547854</span>
+                            </div>	
+                            <!--收货人手机  end-->
+                        </div>
+                        <!--收货人信息  end-->
+                        <!--收货人地址   start-->
+                        <div class="pAddress flex_box">
+                            <i class="i-order block i-address"></i>
+                            <span class="size28 c3 block flex">湖北省武汉市洪山区南湖大道光谷软件园E城E1栋六楼</span>
+                            <i class="i-arrowR"></i>
+                        </div>
+                        <!--收货人地址   end-->
+                    </a>
+                    <!--跳转页面 end-->
+				</li>
+				<li>
+					<h5 class="c3 size30 marB20">商品信息</h5>
+                    <a href="p2-2-2商品信息.html">
+                        <!--商品信息  start-->
+                        <div class="OproBox flex_box vertical">
+                            <!--商品图片  start-->
+                            <div class="flex flex_box">
+                                <div class="Otu marR14">
+                                    <img src="img/tu2.jpg" />
+                                </div>
+                                <div class="Otu marR14">
+                                    <img src="img/tu1.png" />
+                                </div>
+                                <div class="Otu marR14">
+                                    <img src="img/tu2.jpg" />
+                                </div>
+                            </div>
+                            <!--商品图片  start-->
+                            <!--商品件数  start-->
+                            <span class="size30 c6 sp-zs">共 <i class="blue">3</i> 件</span>
+                            <!--商品件数  end-->
+                            <i class="i-arrowR"></i>
+                        </div>
+                        <!--商品信息  start-->
+                    </a>
+				</li>
+				<li>
+					<h5 class="c3 size30 flex marB20">优惠信息</h5>
+				    <!--使用优惠码   start-->
+				    <div class="flex_box vertical">
+				    	<span class="size28 c9 marR14 sp-yhq">使用优惠码</span>
+				    	<input class="flex block yh-txt size28 c9" type="text" placeholder="请输入优惠码" />
+				    	<button style="color:#fff;background:#5ed5d9;padding:5px 7px;margin-left:5px;border-radius:3px;">保存</button>
+				    </div>
+				    <!--使用优惠码   end-->
+				</li>
+				<li>
+                   <a class="flex_box vertical" href="p2-2-4优惠券.html">
+					<h5 class="c3 size30 flex">使用优惠券</h5>
+					<span class="c9 size28">有可用优惠券</span>
+					<i class="i-arrowR"></i>
+                   </a> 
+				</li>
+				<li>
+					<!--使用积分行   start-->
+					<div class="flex_box">
+					<h5 class="c3 size30 flex marB20">使用积分</h5>
+					<span class="blue size32">3000</span>
+					</div>
+					<!--使用积分行   end-->
+				    <!--使用优惠码   start-->
+				    <div class="flex_box vertical">
+				    	<span class="size28 c9 marR14 flex block lineHeight">您总计有3000积分，可抵<i class="red">￥3.00</i></span>
+				    	<a class="blue size32 switch block sw-hover clearfix">
+							<i class="i-switch block" ></i>
+						</a>
+						<input class=" block yh-txt size28 c9" type="text" placeholder="" style="margin-left:3px;">
+				    </div>
+				    <!--使用优惠码   end-->
+				</li>
+				<li>
+					<!--使用积分行   start-->
+					<div class="flex_box">
+					<h5 class="c3 size30 flex lineHeight">开具发票</h5>
+					<a class="blue size32 switch block sw-hover clearfix">
+						<i class="i-switch block" ></i>
+					</a>
+					<input class=" block yh-txt size28 c9" type="text" placeholder="" style="margin-left:3px;">
+					</div>
+					<!--使用积分行   end-->
+				   
+				</li>
+				<li>
+                  <a class="flex_box vertical" href="p2-2-3备注.html">
+					<h5 class="c3 size30 flex">备注</h5>
+					<i class="i-arrowR"></i>
+                  </a>  
+				</li>
+				<li>
+					<!--lineRow start-->
+					<div class="flex_box vertical marB20">
+						<span class="c3 size30">合计：</span>
+						<span class="flex block red size32">￥366.00</span>
+					</div>
+					<!--lineRow end-->
+					<!--lineRow start-->
+					<div class="flex_box vertical marB20">
+						<span class="c3 size30">运费：</span>
+						<span class="flex block red size32">￥6.00</span>
+					</div>
+					<!--lineRow end-->
+					<!--lineRow start-->
+					<div class="flex_box vertical marB20">
+						<span class="c3 size30">优惠券：</span>
+						<span class="flex block blue size32">-￥60.00</span>
+					</div>
+					<!--lineRow end--><!--lineRow start-->
+					<div class="flex_box vertical marB25">
+						<span class="c3 size30">返现（积分或优惠码或满减）：</span>
+						<span class="flex block blue size32">-￥6.00</span>
+					</div>
+					<!--lineRow end-->
+					<!--按钮  start-->
+					<div class="fixBox flex_box">
+						<!--left start-->
+						<div class="lfTotal flex flex_box vertical">
+							<!--全选  start-->	
+							<div class="">
+								<span class="size30">实际付款</span>
+							</div>
+							<!--全选  end-->
+							<!--产品总价  start-->
+							<span class="size36 sp-total">￥100.00</span>
+							<!--产品总价  end-->
+						</div>
+						<!--left end-->
+						<!--right start-->
+						<a class="block tc a-total size36">提交订单</a>
+						<!--right end-->
+					</div>
+					<!--按钮  end-->
+				</li>
+			</ul>
+			<!--确认订单   end-->
+		</div>
+		<!--content end-->
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$('.switch').on('tap',function(){
+				if($(this).hasClass('sw-hover'))
+				{
+					$(this).removeClass('sw-hover');
+				}
+				else{
+					$(this).addClass('sw-hover');
+				}
+			});
+		});
+	</script>
+</html>

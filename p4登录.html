@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>p4登录</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/common.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/base.css" rel="stylesheet"/>
+	<link href="css/user.css" rel="stylesheet"/>
+	<script src="js/index.js"></script>
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/p2.js"></script>
+	<script src="js/fix.js"></script>
+</head>
+<body>
+	    <!--固定头部   start-->
+		<div id="gdTop" class="gdTop">
+			<!--header start-->
+			<header class="clear_padding flex_box vertical">
+				<a class="arrow block" href="javascript:history.back()"></a>
+				<!--搜药  start-->
+				<div class="flex tc cColor size36">
+					收货地址
+				</div>
+				<!--搜药  end-->
+				<a id="menu" class="menu block" href="javascript:void(0)"></a>
+			</header>
+			<!--header end-->
+			<!--footer start-->
+			<div id="fix-box" class="gdBox flex_box vertical gb-top" >
+				<a class="flex block gbHover tc clear_padding" href="p1首页.html">
+					<!--icon start-->
+					<i class="fixIcon block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">首页</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p1-2分类.html">
+					<!--icon start-->
+					<i class="fixIcon fc-fl block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">分类</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p2-1购物车.html">
+					<!--icon start-->
+					<i class="fixIcon fc-gwc block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz  block">购物车</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p3个人中心.html">
+					<!--icon start-->
+					<i class="fixIcon fc-grzx block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">个人中心</i>
+					<!--wenzi end-->
+				</a>
+			</div>
+			<!--footer end-->
+		</div>
+		<!--固定头部   start-->
+		<!--content start-->
+		
+		<div class="login_bg main_cent">
+		   <div class="login">
+		     <div class="logo_login"><img src="images/log_login.png"/></div>
+			 <div class="logon_form">
+			   <div class="login_item">
+			     <i class="iicon i-phone"></i>
+			     <input placeholder="请输入手机号码" type="text" id="telephone" />
+			   </div>
+			   <div class="login_item">
+			     <i class="iicon i-lock"></i>
+			     <input placeholder="请输入密码" type="text" id="passWord" />
+			   </div>
+			   <p class="remember"><a class="fr underline color_1" href="#">忘记密码</a><i class="iicon i-check"></i>记住密码</p>
+			   <div class="login-btn"><button id="login_btn">登录</button></div>
+			   <div class="regist-btn"><a href="p5注册.html"><button>立即注册</button></a></div>
+			   <h3 class="h3_title"><span>其他方式</span></h3>
+			   <div class="other_login">
+			       <img src="images/qq.png"/>
+				   <img src="images/weixin.png"/>
+				   <img src="images/weibo.png"/>
+			   </div>
+			   </div>
+			 </div>
+		   </div>
+		   <!--bottom start-->
+			<div class="endBox">
+				<!--搜索  start-->
+				<div class="ssBox2 flex_box vertical">
+					<i class="i-ss block"></i>
+					<input id="ss" class="ser-txt block flex ym-search" type="text" class="ser-txt tc" placeholder="输入药名进行搜索" />
+				</div>	
+				<!--搜索  end-->
+				<!--登录、注册  start-->
+				<div class="tc lgBox">
+					<a class="inline-b rel line" href="p4登录.html">登录</a><a class="inline-b" href="p5注册.html">注册</a>
+				</div>
+				<!--登录、注册  end-->
+				<!--帮助中心  start-->
+				<div class="tc lgBox">
+					<a class="inline-b rel line" href="p6反馈意见.html">反馈意见</a><a class="inline-b line rel" href="p7帮助中心.html">帮助中心</a><a class="inline-b rel line" href="p8关于我们.html">关于我们</a><a class="inline-b" href="javascript:void(0)">电脑版</a>
+				</div>
+				<!--帮助中心  end-->
+				<!--描述  start-->
+				<img src="img/wz-pic.jpg"/>
+				<!--描述  end-->
+				<!--企业电话   start-->
+				<div class="phone flex_box vertical horizontal">
+					<i class="i-ph"></i>
+					<span class="size28 c9 marR10">企业电话:</span><span class="size28 blue">400-123456789</span>
+				</div>
+				<!--企业电话   end-->
+			</div>
+			<!--bottom end-->
+			<!--底部  start-->
+			<div class="dbg rel">
+				<!--立马领取   start-->
+				<div class="size36 c6 tc dWz">
+				现在下载医药e家，立马领取<i class="red size52">50</i>元！
+				</div>
+				<!--立马领取   start-->
+
+				<!--iphone下载  start-->
+				<a class="a-btn az" href="javascript:void(0)">
+					
+				</a>
+				<!--iphone下载  end-->
+			</div>
+			<!--底部  end-->
+		
+		<!--content end-->
+	
+<script type="text/javascript">
+$(function(){
+	$(".i-check").click(function(){
+		if($(this).hasClass("i-checked")){
+		   $(this).removeClass("i-checked");
+		}else{
+		   $(this).addClass("i-checked");
+		}
+	});
+	//记住密码
+	$("#telephone").val(localStorage.getItem("telephone"));
+	$("#login_btn").click(function(){
+		if (volidate()){
+			toLogin();
+		}
+	});
+})
+
+function oLogin(){
+	$.ajax({
+		type:'POST',
+		url:'http://127.0.0.1:8080/xtys_wap/service/users/login',
+		dataType:"json",
+		data:{
+			mobile:$("#telephone").val,
+			password:$("#passWord").val
+		},
+		success : function(result){      //服务器返回的数据
+					if(result.status=='0'){
+						//储存手机号码到telp
+						sessionStorage.setItem("telephone",$("#telephone").val());
+						prompt('注册成功!')
+						sessionStorage.setItem("user",JSON.stringify(result.data));
+						console.log(result.data);
+						//跳转到登录页面 
+						location='login.html';
+						} else {
+							prompt(result.msg);
+							return;
+						}
+				},
+				error : function(XMLHttpRequest, textStatus, errorThrown){
+					  //通常情况下textStatus和errorThrown只有其中一个包含信息
+					  this;   //调用本次ajax请求时传递的options参数
+				   }
+	});
+}
+
+function volidate(){
+	//------------登录 end----------;
+	//------------校验 start----------;
+	function volidate() {
+	var tel = $("#telp").val();
+	var passwo = $("#passWo").val();
+	var re = /^1\d{10}$/;
+	if (tel == "") {
+		$("#telp").focus();
+		prompt("手机号不能为空");
+		return false;
+	}
+	if (passwo == "") {
+		$("#passwo").focus();
+		prompt("密码不能为空");
+		return false;
+	}
+	if (!re.test(tel)) {
+		$("#telp").focus();
+		prompt("手机格式不正确");
+		return false;
+	}
+	return true;
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+.about_us{ padding:0.33rem; background:#fff; margin-bottom:10px;}
+.about_us h3{ color:#999; font-size:0.6rem; padding-bottom:0.4rem;}
+.word-break{ word-break:break-all;}
+.feedback{ padding:0 0.33rem; background:#fff; margin-bottom:20px; overflow:hidden;}
+.feedback p.p_title{ font-size:0.4rem; color:#666; padding:0.1rem 0; margin-bottom:10px;}
+.border-tm{ border-bottom:1px solid #e9e9e9;}
+textarea{ background:#f8f8f8; font-family:"微软雅黑"; width:100%; resize:none; height:100%; text-indent:1em; border:none;}
+.feedback textarea{ height:100px; margin-bottom:10px;}
+
+
+/*注册*/
+.register{ margin-bottom:10px;}
+.register form{ background:#fff; padding:10px 0.4rem;}
+.item{ margin-bottom:0.4rem;}
+.item p{ color:#ff9b7c;}
+.item-list{ position:relative;}
+.item-list input.text{ width:100%; height:1rem; border-radius:5px; border:1px solid #868686; text-indent:0.3rem; box-sizing:border-box;}
+.abs-item-list{ height:1rem; border-radius:5px; right:0; padding-right:40%;}
+.item-list input.test-btn{position:absolute; right:0; width:35%; top:0; background:#c8a0f1; height:1rem; border-radius:5px; color:#fff;}
+.item-list input.grey-bg{ background:#ccc;}
+.color_1{ color:#75d1d1;}
+.register-btn{ padding:0.5rem 0;}
+
+
+/*弹框*/
+.popup-cover{ background:#333; position:fixed; left:0; top:0; right:0; bottom:0; z-index:99; filter:alpha(opacity=50); opacity:0.5;}
+.popup-case{ position:fixed; top:20%; left:10%; width:80%; background:#fff; z-index:999; overflow:hidden; box-shadow:0 0 10px #888888; border-radius:5px;}
+.agreement h3{ text-align:center; border-bottom:1px solid #cccccc; height:1rem; line-height:1rem;}
+.matter{ padding:0.23rem;}
+.matter p{ color:#666666;}
+
+/*登录*/
+.main_cent{ padding-top:1.15rem;}
+.login_bg{ background:url(../img/login_bg.jpg); background-position:center; background-size:cover;}
+.logo_login{ text-align:center; padding:1rem 0;}
+.logo_login img{ width:30%;}
+.logon_form{ padding:0 0.4rem; overflow:hidden;}
+.login_item{ position:relative; padding-left:40px; background:#fff; height:1.2rem; border-radius:6px; box-shadow:0 2px 1px 0 #999; margin-bottom:20px;}
+.login_item input{ height:1.2rem; line-height:1.2rem; width:100%;}
+.iicon{ background:url(../images/iicon.png) no-repeat; background-size:200px auto; display:inline-block; vertical-align:middle;}
+.i-phone{ width:20px; height:24px; background-position:-4px -4px; position:absolute; left:8px; top:9px;}
+.i-lock{ width:20px; height:24px; background-position:-4px -38px; position:absolute; left:8px; top:9px;}
+.i-check{ width:18px; height:18px; background-position:-5px -72px; margin-top:-2px; margin-right:5px;}
+.remember{ padding-bottom:10px;}
+.i-checked{ background-position:-5px -97px;}
+.login-btn button{ color:#fff; background:#5ed5d9; box-shadow:0 0 1px 0px #999; width:100%; border-radius:6px; height:1.2rem; margin-bottom:20px;}
+.regist-btn button{ color:#fff; border:1px solid #fff; width:100%; border-radius:6px; height:1.2rem; margin-bottom:20px; box-shadow:0 0 1px 0px #999;}
+
+.h3_title { border-bottom:1px dashed #fff; text-align:center; height:20px; margin-bottom:25px;
+color:#fff; line-height:2.4em; position:relative; z-index:0;}
+.h3_title span { display:inline-block; padding:0 30px; background:#abe5e5;}
+.other_login{ text-align:center; padding-bottom:1.2rem;}
+.other_login img{ width:15%; margin:0 10px;}
+
+
+/*修改密码*/
+.step{ border-bottom:1px solid #cccccc; width:70%; margin:0 auto; position:relative; margin-top:50px; margin-bottom:100px;}
+.step li{ position:absolute; text-align:center; top:-15px; font-size:14px;}
+.step li.lt{ left:-15px;}
+.step li.rt{ right:-15px;}
+.step li span{ display:inline-block; width:20px; height:20px; border-radius:50%; background:#ccc; text-align:center; padding:5px;}
+.step li p{ padding-top:5px;}
+.step li.active{ color:#c8a0f1;}
+.step li.active span{ background:#c8a0f1;}
+.i-test{ width:20px; height:20px; background-position:-4px -122px;}
+.i-password{ width:20px; height:20px; background-position:-4px -147px;}
+.testing{ padding:0.33rem 0.33rem 0 0.33rem ; background:#fff; overflow:hidden;}
+.testing input.text{ color:#333;}
+.next-step{ padding:0.33rem;}
+.next-step button{ border-radius:5px; width:100%; background:#5ed5d9; color:#fff; height:1.2rem; font-size:0.4rem;}
+.i-testing{ width:20px; height:20px; background-position:-4px -170px;}
+
+.number{ background:#fff;}
+.number li{ border-bottom:1px solid #ccc; padding:15px 20px; line-height:32px; position:relative;}
+.i-qq{ width:24px; height:24px; background-position:-44px -92px; margin-right:20px;}
+.i-weixin{ width:24px; height:24px; background-position:-44px -124px; margin-right:20px;}
+.i-weibo{ width:24px; height:24px; background-position:-44px -154px; margin-right:20px;}
+.i-switch{ position:absolute; width:52px; height:32px; background-position:-34px -5px; cursor:pointer; right:20px; top:15px;}
+.i-switched{ background-position:-34px -49px;}
+
+
+/*评价*/
+.methed ul li{ padding:15px; overflow:hidden; background:#fff; border-bottom:1px solid #ccc;}
+.methed ul li img{ float:left; width:2rem; height:2rem; border:1px solid #eee;}
+.evaluate{ padding-left:10px; margin-left:2rem;}
+.evaluate h3{ color:#666; padding-bottom:0.5rem;}
+.ellips{ overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;}
+.est-btn{ background:#5ed5d9; color:#fff; padding:0.2rem 0.4rem; border-radius:5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

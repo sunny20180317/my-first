@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/style.css" rel="stylesheet"/>
+		<script src="js/index.js"></script>
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/p2.js"></script>
+        <script src="js/fix.js"></script>
+	</head>
+	<body>
+			<!--固定头部   start-->
+		<div id="gdTop" class="gdTop">
+			<!--header start-->
+			<header class="clear_padding flex_box vertical">
+				<a class="arrow block" href="javascript:history.back()"></a>
+				<!--搜药  start-->
+				<div class="flex tc cColor size36">
+					购物车
+				</div>
+				<!--搜药  end-->
+				<a id="menu" class="menu block" href="javascript:void(0)"></a>
+			</header>
+			<!--header end-->
+			<!--footer start-->
+			<div id="fix-box" class="gdBox flex_box vertical gb-top" >
+				<a class="flex block  tc clear_padding" href="p1首页.html">
+					<!--icon start-->
+					<i class="fixIcon block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">首页</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p1-2分类.html">
+					<!--icon start-->
+					<i class="fixIcon fc-fl block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">分类</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc gbHover clear_padding" href="p2-1购物车.html">
+					<!--icon start-->
+					<i class="fixIcon fc-gwc block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz  block">购物车</i>
+					<!--wenzi end-->
+				</a>
+				<a class="flex block tc clear_padding" href="p3个人中心.html">
+					<!--icon start-->
+					<i class="fixIcon fc-grzx block"></i>
+					<!--icon end-->
+					<!--wenzi start-->
+					<i class="fixwz block">个人中心</i>
+					<!--wenzi end-->
+				</a>
+			</div>
+			<!--footer end-->
+		</div>
+		<!--固定头部   start-->
+		<!--content start-->
+		<div class="content con-kind con-gwc con-top">
+			<ul class="ulGwc">
+				<li id="gwcLi01" class="flex_box vertical clear_padding">
+					    <!--多选按钮  start-->
+						<label class="checkbox lb-checked">
+            				<input type="checkbox" name="checkbox">
+            				<i class="inner"></i>
+        				</label>
+						<!--多选按钮  end-->
+						<!--图片  start-->
+						<div class="gwcTu">
+							<img src="img/tu2.jpg" />
+						</div>
+						<!--图片  end-->
+						<!--商品名称及操作  start-->
+						<div class="gwcBox flex">
+							<p class="size30 c3 p-line2 p-gwc">111我是商品名称我是商品名称我是商品名我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称</p>
+							<!--02 start-->
+							<div class="row flex_box vertical">
+								<div class="flex">
+								<!--购买数量  start-->
+								<div class="buy buy-gwc flex_box rel">
+									<a class="a-jian minus tc size36 ddd">-</a>
+									<input class="num-show num-txt tc size24 c6" type="text" value="0" />
+									<a class="a-jia add1 tc tc size36 ddd">+</a>
+								</div>
+								<!--购买数量  end-->
+								</div>
+								<!--价格  start-->
+								<span class="red size32"><i class="marR15">X</i>￥300.00</span>
+								<!--价格  end-->
+							</div>
+							<!--02 end-->
+							<!--03 start-->
+							<div class="flex_box">
+								<div class="flex"></div>
+								<a class="garbage block"></a>
+							</div>
+							<!--03 end-->
+						</div>
+						<!--商品名称及操作  end-->
+				</li>
+				<li id="gwcLi02" class="flex_box vertical clear_padding">
+					    <!--多选按钮  start-->
+						<label class="checkbox">
+            				<input type="checkbox" name="checkbox">
+            				<i class="inner"></i>
+        				</label>
+						<!--多选按钮  end-->
+						<!--图片  start-->
+						<div class="gwcTu">
+							<img src="img/tu2.jpg" />
+						</div>
+						<!--图片  end-->
+						<!--商品名称及操作  start-->
+						<div class="gwcBox flex">
+							<p class="size30 c3 p-line2 p-gwc">222我是商品名称我是商品名称我是商品名我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称</p>
+							<!--02 start-->
+							<div class="row flex_box vertical">
+								<div class="flex">
+								<!--购买数量  start-->
+								<div class="buy buy-gwc flex_box rel">
+									<a class="a-jian minus tc size36 ddd">-</a>
+									<input class="num-show num-txt tc size24 c6" type="text" value="0"/>
+									<a class="a-jia add1 tc tc size36 ddd">+</a>
+								</div>
+								<!--购买数量  end-->
+								</div>
+								<!--价格  start-->
+								<span class="red size32"><i class="marR15">X</i>￥300.00</span>
+								<!--价格  end-->
+							</div>
+							<!--02 end-->
+							<!--03 start-->
+							<div class="flex_box">
+								<div class="flex"></div>
+								<i class="garbage block"></i>
+							</div>
+							<!--03 end-->
+						</div>
+						<!--商品名称及操作  end-->
+				</li>
+				<li id="gwcLi03" class="flex_box vertical clear_padding">
+						<!--多选按钮  start-->
+						<label class="checkbox">
+            				<input type="checkbox" name="checkbox">
+            				<i class="inner"></i>
+        				</label>
+						<!--多选按钮  end-->
+						<!--图片  start-->
+						<div class="gwcTu">
+							<img src="img/tu2.jpg" />
+						</div>
+						<!--图片  end-->
+						<!--商品名称及操作  start-->
+						<div class="gwcBox flex">
+							<p class="size30 c3 p-line2 p-gwc">333我是商品名称我是商品名称我是商品名我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称</p>
+							<!--02 start-->
+							<div class="row flex_box vertical">
+								<div class="flex">
+								<!--购买数量  start-->
+								<div class="buy buy-gwc flex_box rel">
+									<a class="a-jian minus tc size36 ddd">-</a>
+									<input class="num-show num-txt tc size24 c6" type="text" value="0"/>
+									<a class="a-jia add1 tc tc size36 ddd">+</a>
+								</div>
+								<!--购买数量  end-->
+								</div>
+								<!--价格  start-->
+								<span class="red size32"><i class="marR15">X</i>￥300.00</span>
+								<!--价格  end-->
+							</div>
+							<!--02 end-->
+							<!--03 start-->
+							<div class="flex_box">
+								<div class="flex"></div>
+								<a class="garbage block"></a>
+							</div>
+							<!--03 end-->
+						</div>
+						<!--商品名称及操作  end-->
+				</li>
+				<li id="gwcLi04" class="flex_box vertical clear_padding">
+						<!--多选按钮  start-->
+						<label class="checkbox">
+            				<input type="checkbox" name="checkbox">
+            				<i class="inner"></i>
+        				</label>
+						<!--多选按钮  end-->
+						<!--图片  start-->
+						<div class="gwcTu">
+							<img src="img/tu2.jpg" />
+						</div>
+						<!--图片  end-->
+						<!--商品名称及操作  start-->
+						<div class="gwcBox flex">
+							<p class="size30 c3 p-line2 p-gwc">444我是商品名称我是商品名称我是商品名我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称</p>
+							<!--02 start-->
+							<div class="row flex_box vertical">
+								<div class="flex">
+								<!--购买数量  start-->
+								<div class="buy buy-gwc flex_box rel">
+									<a class="a-jian minus tc size36 ddd">-</a>
+									<input class="num-show num-txt tc size24 c6" type="text" value="0"/>
+									<a class="a-jia add1 tc tc size36 ddd">+</a>
+								</div>
+								<!--购买数量  end-->
+								</div>
+								<!--价格  start-->
+								<span class="red size32"><i class="marR15">X</i>￥300.00</span>
+								<!--价格  end-->
+							</div>
+							<!--02 end-->
+							<!--03 start-->
+							<div class="flex_box">
+								<div class="flex"></div>
+								<a class="garbage block"></a>
+							</div>
+							<!--03 end-->
+						</div>
+						<!--商品名称及操作  end-->
+				</li>
+				<li id="gwcLi05" class="flex_box vertical clear_padding">
+						<!--多选按钮  start-->
+						<label class="checkbox">
+            				<input type="checkbox" name="checkbox">
+            				<i class="inner"></i>
+        				</label>
+						<!--多选按钮  end-->
+						<!--图片  start-->
+						<div class="gwcTu">
+							<img src="img/tu2.jpg" />
+						</div>
+						<!--图片  end-->
+						<!--商品名称及操作  start-->
+						<div class="gwcBox flex">
+							<p class="size30 c3 p-line2 p-gwc">555我是商品名称我是商品名称我是商品名我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称我是商品名称</p>
+							<!--02 start-->
+							<div class="row flex_box vertical">
+								<div class="flex">
+								<!--购买数量  start-->
+								<div class="buy buy-gwc flex_box rel">
+									<a class="a-jian minus tc size36 ddd">-</a>
+									<input class="num-show num-txt tc size24 c6" type="text" value="0"/>
+									<a class="a-jia add1 tc tc size36 ddd">+</a>
+								</div>
+								<!--购买数量  end-->
+								</div>
+								<!--价格  start-->
+								<span class="red size32"><i class="marR15">X</i>￥300.00</span>
+								<!--价格  end-->
+							</div>
+							<!--02 end-->
+							<!--03 start-->
+							<div class="flex_box">
+								<div class="flex"></div>
+								<a class="garbage block"></a>
+							</div>
+							<!--03 end-->
+						</div>
+						<!--商品名称及操作  end-->
+				</li>
+			</ul>
+		</div>
+		<!--content end-->
+        <div style="height:3.57rem;"></div>
+		<!--footer start-->
+		<div class="footer">
+			<!--01 start-->
+			<div class="total clear_padding">
+				<p class="c3 size30 p-hg">共<i class="i-num">3</i>件产品</p>
+				<p class="c3 size30 p-hg">总价（不含运费）</p>
+			</div>
+			<!--01 end-->
+			<!--02 start-->
+			<div class="fixBox flex_box">
+				<!--left start-->
+				<div class="lfTotal flex flex_box vertical">
+					<!--全选  start-->	
+					<div id="all" class="">
+						<!--多选按钮  start-->
+						<label class="checkbox">
+            				<input type="checkbox" name="checkbox">
+            				<i class="inner"></i>
+        				</label>
+						<!--多选按钮  end-->
+						<span class="size30">全选</span>
+					</div>
+					<!--全选  end-->
+					<!--产品总价  start-->
+					<span class="size36 sp-total">￥1000.00</span>
+					<!--产品总价  end-->
+				</div>
+				<!--left end-->
+				<!--right start-->
+				<a class="block tc a-total size36">去结算</a>
+				<!--right end-->
+			</div>
+			<!--02 end-->
+		</div>	
+		<!--footer end-->
+		<!--提示框 start--> 
+		<div id="black" class="pro-bg" style="display:none;">
+		 <div class="pro-box">
+		  <div class="fixBox1 clear_padding">
+		    <span class="sp-dec clear_padding">您确定要删除该项目吗？</span>
+		    <div class="fixBtn flex_box clear_padding horizontal">
+		       <a id="del" class="a-button a-btnMar" href="javascript:void(0)">确定</a>
+		       <a id="cel" class="a-button" href="javascript:void(0)">取消</a>
+		    </div> 
+		  </div>
+		 </div> 
+		</div>
+		<!--提示框 end--> 
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$('.garbage').on('tap',function(){
+				$(this).each(function(){
+					//让隐藏的弹窗显示
+					$('#black').show()
+					//获取删除外包围盒子，并获取它的id
+					var id = $(this).closest('li').attr('id');
+					//此处通过data为删除按钮赋值
+					$('#del').data('id',id);
+				});
+			});
+			//点击确定按钮
+			$('#del').on('tap',function(){
+				//此处通过data取值
+				var id = $(this).data('id');
+				$('#'+id).hide(1000);
+                $('#black').hide();
+			});
+			//点击取消按钮
+			$('#cel').on('tap',function(){
+				$(this).closest('#black').hide();
+			})
+			//全选
+			$(".ulGwc input[type=checkbox]").each(function(){
+			$(this).on('click',function(){
+					var selfCount = $(".ulGwc input[type=checkbox]").length;
+				    var checkedCount = $(".ulGwc input[type=checkbox]:checked").length;
+				    if(checkedCount==selfCount)
+				        {
+					       $("#all input[type=checkbox]").prop("checked",true);  
+				        }
+						else
+						{
+							$("#all input[type=checkbox]").prop("checked",false);  
+						}
+					});	
+				});	
+			//全选按钮触发
+			$('#all input[type=checkbox]').on('click',function(){
+				if($("#all input[type=checkbox]").prop('checked')){
+					$('.ulGwc input[type=checkbox]').prop("checked",true);
+				}
+				else{
+					$('.ulGwc input[type=checkbox]').prop("checked",false);
+				}
+
+			});
+		});
+
+	</script>
+</html>
